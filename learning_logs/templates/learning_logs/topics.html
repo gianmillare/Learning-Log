@@ -1,0 +1,16 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+<p>Topics</p>
+
+<ul>
+<!--This is how we enter a for loop in Django. This for loop will loop through all the topics from 'context' in views.py-->
+    {% for topic in topics %}
+<!--Double Braces indicate a "print" feature. This will print out the topics from the loop onto the page-->
+    <li>{{ topic }}</li>
+<!--This tells Django what to do if there are no topics in the loop. It will print the message below it.-->
+    {% empty %}
+    <li>No topics have been added yet.</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
