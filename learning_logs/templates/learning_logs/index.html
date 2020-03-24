@@ -1,3 +1,7 @@
-<p>Learning Log</p>
+<!--This is how Django knows where to inherit from: 'extends' and a path to the parent file-->
+{% extends "learning_logs/base.html" %}
 
+<!--Similar to the content in the parent file, anything in between block and endblock will only appear in this file-->
+{% block content %}
 <p>Learning Log helps you keep track of your learning, for any topic you're learning about.</p>
+{% endblock content %}
