@@ -13,4 +13,5 @@ urlpatterns = [
 
     # Page that shows all topics
     path('topics/', views.topics, name='topics'),
+    path('topics/<int:topic_id>/', views.topic, name='topic'),
 ]
