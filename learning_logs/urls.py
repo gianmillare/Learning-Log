@@ -1,7 +1,7 @@
 """ Define URL Patterns for learning_logs """
 
 from django.urls import path # dependency
-from . import  views # importing the views module from the same directory as this file
+from . import views # importing the views module from the same directory as this file
 
 app_name = 'learning_logs'
 urlpatterns = [
