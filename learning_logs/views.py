@@ -13,7 +13,7 @@ def index(request):
 @login_required
 def topics(request):
     """ Show all topics """
-    topics = Topic.objects.order_by('date_added') # Here we store all the information from the class and object 'date_added' into another variable 'topics'
+    topics = Topic.objects.filter(owner=request.user).order_by('date_added') # Here we store all the information from the class and object 'date_added' into another variable 'topics'
     context = {'topics': topics} # Here we define a context --> a key value pairing containing a set of topics from models.py
     return render(request, 'learning_logs/topics.html', context) # This is a standard render that will display the context, request, and house the file path
 
