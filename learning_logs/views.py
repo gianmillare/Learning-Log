@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect # Redirect will send the user back to the topics page once the form is submitted
+from django.contrib.auth.decorators import login_required
 
 from .models import Topic, Entry # we import this because the models.py file has data under a class called Topic
 from .forms import TopicForm, EntryForm
@@ -9,12 +10,14 @@ def index(request):
     """ homepage for learning log. """
     return render(request, 'learning_logs/index.html')
 
+@login_required
 def topics(request):
     """ Show all topics """
     topics = Topic.objects.order_by('date_added') # Here we store all the information from the class and object 'date_added' into another variable 'topics'
     context = {'topics': topics} # Here we define a context --> a key value pairing containing a set of topics from models.py
     return render(request, 'learning_logs/topics.html', context) # This is a standard render that will display the context, request, and house the file path
 
+@login_required
 def topic(request, topic_id): # whatever is captured in '/<int:topic_id>/' from urls.py will be stored in 'topic_id' function
     """Show a single topic and all its entries"""
     topic = Topic.objects.get(id=topic_id) # We get the the topic and store it in an ID
@@ -22,6 +25,7 @@ def topic(request, topic_id): # whatever is captured in '/<int:topic_id>/' from 
     context = {'topic': topic, 'entries': entries} # we store the topics and entries into context
     return render(request, 'learning_logs/topic.html', context)
 
+@login_required
 def new_topic(request):
     """ Add a new topic """
     if request.method != 'POST':
@@ -38,6 +42,7 @@ def new_topic(request):
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
 
+@login_required
 def new_entry(request, topic_id):
     """ Add a new entry for a particular topic """
     topic = Topic.objects.get(id=topic_id)
@@ -58,6 +63,7 @@ def new_entry(request, topic_id):
     context = {'topic': topic, 'form': form}
     return render(request, 'learning_logs/new_entry.html', context)
 
+@login_required
 def edit_entry(request, entry_id):
     """ Edit an existing entry """
     entry = Entry.objects.get(id=entry_id)
