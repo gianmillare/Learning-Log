@@ -1,20 +1,28 @@
 {% extends "learning_logs/base.html" %}
 
+{% block page_header%}
+<h1>Topics</h1>
+{% endblock page_header%}
+
+
 {% block content %}
-<p>Topics</p>
 
 <ul>
-<!--This is how we enter a for loop in Django. This for loop will loop through all the topics from 'context' in views.py-->
+
     {% for topic in topics %}
-<!--Double Braces indicate a "print" feature. This will print out the topics from the loop onto the page-->
+
     <li>
-        <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
+        <h3><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></h3>
     </li>
-<!--This tells Django what to do if there are no topics in the loop. It will print the message below it.-->
+
     {% empty %}
-    <li>No topics have been added yet.</li>
+
+    <li><h3>No Topics have been added yet.</h3></li>
+
     {% endfor %}
+
 </ul>
 
-<a href="{% url 'learning_logs:new_topic' %}">Add a new Topic</a>
+<h3><a href="{%  url 'learning_logs:new_topic' %}">Add a New Topic</a> </h3>
+
 {% endblock content %}
