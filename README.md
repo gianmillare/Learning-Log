@@ -9,8 +9,20 @@ This Django-centered project is from Eric Matthes project-based programming book
 I've had some experience with Django and application building. However, not to the extent where I can truly call myself proficient with the Django Python Library. This project's sole purpose is to (hopefully) increase my skill level with Django and python Programming from Intermediate to Advance.
 
 -----------------------------------------------------------------------------------------------------------------------
+
 ### Below is an image of what I set out to accomplish: a journal-like application that can log topics and entries.
 
 This application is blog-styled. Meaning, people can constantly update things that they've learned by logging (or blogging) their topics and entries based on what they learned. This is a perfect way to (1) keep tabs on lessons, and (2) write down any key pieces of information (like lines of code or formulas).
 
 ![](images/image1.png)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+### The home page of the application is an introduction to what the application is primarily used for. New users will be greeted with a Jumbotron and will have an option to register an account.
+
+![](images/image20.png)
+
+![](images/image3.png)
+
+-----------------------------------------------------------------------------------------------------------------------
+
