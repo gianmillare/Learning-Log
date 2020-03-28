@@ -40,6 +40,6 @@ Each entry is timestamped, and listed in reverse chronological order. Users will
 
 -----------------------------------------------------------------------------------------------------------------------
 
-### Below is a snapshot of the code used in the project. The application is almost entirely made from Python and HTML.
+### Below is a snapshot of the code used in the project. The application is almost entirely made from Python (Django) and JavaScript.
 
 ![](images/image6.png)
