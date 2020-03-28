@@ -1,6 +1,7 @@
-# Learning-Log (in progress) https://learning-log-gm.herokuapp.com/
+# Learning-Log (in progress)
 Creating a learning log application using Django
 
+https://learning-log-gm.herokuapp.com/
 -----------------------------------------------------------------------------------------------------------------------
 
 This project is from Eric Matthes project-based programming book titled "Python Crash Course", and will be crucial to my career as a software developer. 
