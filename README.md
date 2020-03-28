@@ -29,3 +29,13 @@ This application is blog-styled. Meaning, people can constantly update things th
 ### Users that already have an account will be prompted to Login before accessing any topics or entries.
 
 ![](images/image4.png)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+### Once a User logs into their account, they'll be able to access the 'Topics' page where they can create new topics, and create etnires for those topics. 
+
+Each entry is timestamped, and listed in reverse chronological order. Users will also be able to edit these entries.
+
+![](images/image5.png)
+
+-----------------------------------------------------------------------------------------------------------------------
