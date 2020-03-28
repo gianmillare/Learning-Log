@@ -4,7 +4,7 @@ https://learning-log-gm.herokuapp.com/
 
 This Django-centered project is from Eric Matthes project-based programming book titled "Python Crash Course", and will be crucial to my career as a software developer. Up until now, I've had the capabilities to perform data analysis and create small applications, but haven't had a platform to display them (except GitHub of course). This project is the perfect gateway to learn how to build web applications to host my projects.
 
-I've had some experience with Django and application building. However, not to the extent where I can truly call myself proficient with the Django Python Library. This project's sole purpose is to (hopefully) increase my skill level with Django and python Programming from Intermediate to Advance.
+I've had some experience with Django and application building. However, not to the extent where I can truly call myself proficient with the Django Python Library. This project's sole purpose is to (hopefully) increase my skill level with Django and Python programming from Intermediate to Advance.
 
 -----------------------------------------------------------------------------------------------------------------------
 
