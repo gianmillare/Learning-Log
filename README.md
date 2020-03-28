@@ -26,3 +26,6 @@ This application is blog-styled. Meaning, people can constantly update things th
 
 -----------------------------------------------------------------------------------------------------------------------
 
+### Users that already have an account will be prompted to Login before accessing any topics or entries.
+
+![](images/image4.png)
