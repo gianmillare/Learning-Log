@@ -39,3 +39,7 @@ Each entry is timestamped, and listed in reverse chronological order. Users will
 ![](images/image5.png)
 
 -----------------------------------------------------------------------------------------------------------------------
+
+### Below is a snapshot of the code used in the project. The application is almost entirely made from Python and HTML.
+
+![](images/image6.png)
