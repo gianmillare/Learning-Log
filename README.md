@@ -1,4 +1,4 @@
-# Learning-Log (in progress)
+# Learning-Log (in progress) https://learning-log-gm.herokuapp.com/
 Creating a learning log application using Django
 
 -----------------------------------------------------------------------------------------------------------------------
